@@ -1,0 +1,23 @@
+.doctors-card {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+}
+
+.doctors-card img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}

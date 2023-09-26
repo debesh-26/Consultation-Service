@@ -1,0 +1,30 @@
+.Card h2 {
+    margin-top: 50px;
+}
+
+.CardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sub-heading {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:1120px) {
+
+    .Card h2,
+    .sub-heading {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .Card h2,
+    .sub-heading {
+        margin-left: 10px;
+    }
+}
