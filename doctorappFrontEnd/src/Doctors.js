@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Doctor from "./components/Doctor";
+import { baseUrl } from "./constants";
 function Doctors({ selectedCategory }) {
   const [doctors, setDoctors] = useState([]);
   console.log(selectedCategory);
@@ -10,7 +11,7 @@ function Doctors({ selectedCategory }) {
       try {
         if (selectedCategory) {
           const response = await axios.get(
-            `http://localhost:3001/doctors/${selectedCategory}`
+            `${baseUrl}/doctors/${selectedCategory}`
           );
           setDoctors(response.data);
         }

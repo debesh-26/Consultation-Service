@@ -3,6 +3,7 @@ import axios from "axios";
 import Card from "./components/card";
 import "./categories.css";
 import { Link } from "react-router-dom";
+import { baseUrl } from "./constants";
 
 function Categories({ onSelectCategory }) {
   const [categories, setCategories] = useState([]);
@@ -11,7 +12,7 @@ function Categories({ onSelectCategory }) {
     // Creating an async function to fetch categories
     async function fetchCategories() {
       try {
-        const response = await axios.get("http://localhost:3001/categories");
+        const response = await axios.get(`${baseUrl}/categories`);
         setCategories(response.data);
       } catch (error) {
         console.error(error);
